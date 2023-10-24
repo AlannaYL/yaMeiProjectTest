@@ -9,7 +9,8 @@ export default defineConfig({
     open: '/src/pages/front/index.html' // 指定打開路徑
   },
   plugins: [
-    liveReload(['.public/layouts/*.ejs', '.src/pages/**/*.ejs', '.src/pages/**/*.html']),
+    // 如果ejs更新畫面要顯示
+    liveReload(['public/layouts/*.ejs', 'src/pages/**/*.{js,ejs}', 'src/pages/**/*.html']),
     ViteEjsPlugin(),
     WindiCSS()
   ]
