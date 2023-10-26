@@ -99,6 +99,10 @@
 
 @media (max-width: 1440px) {
 
+  .banner {
+    height: calc(800px * 0.75);
+  }
+
   .banner .container .pic {
     max-width: calc(648px * 0.75);
     height: calc(600px * 0.75);
