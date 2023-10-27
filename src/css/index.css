@@ -14,36 +14,48 @@
   background-color: #198783;
 }
 
-
 .banner {
   width: 100%;
-  height: 800px;
+  height: 640px;
 }
 
-.banner .container .pic {
-  max-width: 648px;
-  height: 600px;
+.banner .container {
+  height: 680px;
+  padding: 64px 0;
 }
+
+
+.banner .container .pic img {
+  max-height: 17rem;
+  object-fit: cover;
+  margin: auto;
+}
+
+
 
 .banner .container .sologan {
-  max-width: 648px;
-  height: 480px;
-  margin-top: 3.5rem;
-  margin-bottom: 3.5rem;
-  padding: 80px 50px;
+  width: 80%;
+  max-height: 17rem;
+  margin: 0 64px;
 }
+
+
 
 .sologan-content {
   position: relative;
-  width: 520px;
-  height: 320px;
-  margin: auto;
+  width: 100%;
+  height: calc(320px * 0.75);
 }
 
 .sologan-content span {
   position: absolute;
-  top: 0;
+  top: 0.5rem;
   right: 0rem;
+}
+
+.sologan-content span svg {
+  width: 80px;
+  height: 60px;
 }
 
 .sologan-content::before {
@@ -51,7 +63,7 @@
   display: inline-block;
   width: 100%;
   border-bottom: 1px solid #C0E0DF;
-  padding-top: 80px;
+  padding-top: calc(80px * 0.75);
 }
 
 .sologan-content::after {
@@ -59,103 +71,160 @@
   display: inline-block;
   width: 100%;
   border-bottom: 1px solid #C0E0DF;
-  padding-top: 120px;
+  padding-top: calc(80px * 0.75);
 }
 
+
+
 .sologan-content h2 {
-  font-family: 'Noto Sans TC';
   font-weight: 900;
-  font-size: 31px;
-  line-height: 38px;
-  letter-spacing: 0.02em;
+  width: calc(378 * 0.75);
+  font-size: calc(30px * 0.75);
+  line-height: calc(38px * 0.75);
   color: #363636;
+  letter-spacing: 0.02em;
 }
 
 .sologan-content h1 {
-  font-family: 'Noto Sans TC';
-  font-style: normal;
   font-weight: 900;
-  font-size: 40px;
-  line-height: 48px;
-  letter-spacing: 0.08em;
+  font-size: calc(40px * 0.75);
+  line-height: calc(48px * 0.75);
   color: #363636;
+  letter-spacing: 0.08em;
 }
 
 .bookingBtn {
-  width: 166px;
-  height: 61px;
+  width: 124px;
+  height: 44px;
   background: #66BAB7;
   position: absolute;
-  bottom: -.2rem;
+  bottom: calc(2rem * 0.75);
   right: 0;
-
-  font-size: 24px;
   font-weight: 700;
-  line-height: 29px;
+  font-size: calc(24px * 0.75);
+  line-height: calc(29px * 0.75);
   letter-spacing: 0.08em;
 }
 
+@media (min-width:500px) {
 
+  .banner .container .pic img {
+    max-height: auto;
+  }
 
-@media (max-width: 1440px) {
+  .banner .container .sologan {
+    width: 54%;
+    margin: 0 12px;
+  }
+}
 
+@media (min-width:720px) {
   .banner {
     height: calc(800px * 0.75);
   }
 
+
   .banner .container .pic {
     max-width: calc(648px * 0.75);
-    height: calc(600px * 0.75);
+    padding: 0;
+  }
+
+  .banner .container .pic img {
+    max-height: calc(600px * 0.75);
   }
 
   .banner .container .sologan {
-    max-width: calc(648px * 0.75);
-    height: calc(480px * 0.75);
-    padding-top: calc(80px * 0.75);
+    /* max-width: calc(648px * 0.5); */
+    /* width: auto;  */
+    max-height: calc(480px * 0.75);
+    padding: calc(60px * 0.75) 0;
+    margin: 0;
   }
 
   .sologan-content {
-    width: calc(520px * 0.75);
-    /* 75% of 520px */
-    height: calc(320px * 0.75);
-    /* 75% of 320px */
+    width: calc(520px * 0.5);
   }
 
-  .sologan-content::before {
-    padding-top: calc(80px * 0.75);
+  .sologan-content span {
+    top: -1.2rem;
+  }
+
+  .sologan-content span svg {
+    width: 120px;
+    height: 90px;
   }
 
   .sologan-content::after {
     padding-top: calc(120px * 0.75);
   }
 
-  .sologan-content span {
-    position: absolute;
-    top: -1.2rem;
-    right: 0rem;
-  }
-
-  .sologan-content h2 {
-    width: calc(378 * 0.75);
-    font-size: calc(30px * 0.75);
-    line-height: calc(38px * 0.75);
-
-  }
-
-  .sologan-content h1 {
-    font-size: calc(40px * 0.75);
-    line-height: calc(48px * 0.75);
-  }
-
   .bookingBtn {
     width: calc(166px * 0.75);
     height: calc(61px * 0.75);
-    background: #66BAB7;
-    position: absolute;
-    bottom: (-.2rem * 0.75);
-    right: 0;
+    bottom: calc(-.2rem * 0.75);
+  }
+}
 
-    font-size: calc(24px * 0.75);
-    line-height: calc(29px * 0.75);
+@media (min-width: 1080px) {
+  .banner .container .sologan {
+    max-width: calc(648px * 0.75);
+  }
+
+  .sologan-content {
+    width: calc(520px * 0.75);
+  }
+}
+
+@media (min-width: 1900px) {
+
+  .banner {
+    height: 800px;
+  }
+
+  .banner .container .pic img {
+    max-height: 600px;
+  }
+
+  .banner .container .sologan {
+    max-width: 648px;
+    height: 480px;
+    padding: 80px 50px;
+  }
+
+  .sologan-content {
+    width: 520px;
+    height: 320px;
+  }
+
+  .sologan-content span {
+    position: absolute;
+    top: 0;
+    right: 0rem;
+  }
+
+  .sologan-content::before {
+    padding-top: 80px;
+  }
+
+  .sologan-content::after {
+    padding-top: 120px;
+  }
+
+  .sologan-content h2 {
+    font-size: 31px;
+    line-height: 38px;
+  }
+
+  .sologan-content h1 {
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  .bookingBtn {
+    width: 166px;
+    height: 61px;
+    bottom: -.2rem;
+    font-size: 24px;
+    line-height: 29px;
   }
 }
