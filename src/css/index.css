@@ -187,8 +187,8 @@
 
   .banner .container .sologan {
     max-width: 648px;
-    height: 480px;
-    padding: 80px 50px;
+    max-height: 480px;
+    /* padding: 80px 50px; */
   }
 
   .sologan-content {
@@ -201,6 +201,7 @@
     top: 0;
     right: 0rem;
   }
+
 
   .sologan-content::before {
     padding-top: 80px;
