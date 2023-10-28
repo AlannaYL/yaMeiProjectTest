@@ -6,13 +6,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- 設定css路徑 -->
   <link rel="stylesheet" href="/src/css/tailwind.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
   <title>芽渼牙醫診所</title>
 </head>
 
 <body>
-  <%- include('public/layouts/header.ejs') %>
-    <h1 class="text-cyan-500">這是 index</h1>
+  <%- include('public/layouts/header.ejs'); -%>
+    <h1 class="pt-24 text-cyan-500">這是 index</h1>
     <p>我很悲傷</p>
+  <%- include('public/layouts/footer.ejs'); -%>
+
+  <!-- 載入header.js -->
+  <script src="../../js/header.js"></script>
 </body>
 
 </html>
