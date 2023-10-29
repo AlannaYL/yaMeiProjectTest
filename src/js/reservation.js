@@ -6,11 +6,12 @@ const mail = document.querySelector('.mail');
 const phone = document.querySelector('.phone');
 const remark = document.querySelector('.remark');
 
-
+const inquire = document.querySelector('.inquire');
 const send = document.querySelector('.send');
 const save = document.querySelector('.save');
 
 const departCheck = document.querySelector('.departCheck');
+const timeCheck = document.querySelector('.timeCheck');
 // const symptomCheck = document.querySelector('.symptomCheck');
 const nameCheck = document.querySelector('.nameCheck');
 const idNumCheck = document.querySelector('.idNumCheck');
@@ -26,9 +27,12 @@ const remindBirth = document.querySelector('.remindBirth');
 const remindMail = document.querySelector('.remindMail');
 const remindPhone = document.querySelector('.remindPhone');
 
+
 send.addEventListener('click',function(e){
   const selectDepart = document.querySelector('input[type=radio][name=department]:checked');
   departCheck.innerHTML=`<p>${selectDepart.value}</p>`;
+  const selectTime = document.querySelector('input[type=radio][name=time]:checked');
+  timeCheck.innerHTML=`<p>${selectTime.value}</p>`;
   const selected = document.querySelector('input[type=radio][name=sex]:checked');
   sexCheck.innerHTML=`<p>${selected.value}</p>`;
   // const symptom = document.getElementsByName('symptom');
