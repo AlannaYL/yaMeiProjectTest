@@ -4,7 +4,7 @@ import WindiCSS from 'vite-plugin-windicss'
 import liveReload from 'vite-plugin-live-reload'
 
 export default defineConfig({
-  // base: '/yaMeiProject/',
+  base: '/yaMeiProject/',
   server: {
     open: '/src/pages/front/index.html' // 指定打開路徑
   },
