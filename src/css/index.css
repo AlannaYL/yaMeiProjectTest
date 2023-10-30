@@ -122,6 +122,10 @@ header {
   background-size: 16px 16px;
 }
 
+.news-items .content {
+  max-width: 351px;
+}
+
 .title-font {
   font-family: 'Noto Sans TC';
   font-size: 24px;
@@ -159,6 +163,8 @@ header {
   text-align: left;
   color: #198783;
 }
+
+
 
 @media (min-width:451px) {
 
