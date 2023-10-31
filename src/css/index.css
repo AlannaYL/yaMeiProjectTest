@@ -14,6 +14,10 @@
   background-color: #198783;
 }
 
+header {
+  transition: top 0.3s;
+}
+
 .banner {
   width: 100%;
   height: 640px;
@@ -118,6 +122,10 @@
   background-size: 16px 16px;
 }
 
+.news-items .content {
+  max-width: 351px;
+}
+
 .title-font {
   font-family: 'Noto Sans TC';
   font-size: 24px;
@@ -156,7 +164,9 @@
   color: #198783;
 }
 
-@media (min-width:471px) {
+
+
+@media (min-width:451px) {
 
   .banner .container .pic img {
     max-height: auto;
@@ -164,6 +174,7 @@
 
   .banner .container .sologan {
     width: 63%;
+    max-width: 293px;
     margin: 0 12px;
   }
 
@@ -188,8 +199,8 @@
   }
 
   .banner .container .sologan {
-    /* max-width: calc(648px * 0.5); */
     /* width: auto;  */
+    max-width: calc(648px * 0.5);
     max-height: calc(480px * 0.75);
     padding: calc(60px * 0.75) 0;
     margin: 0;
