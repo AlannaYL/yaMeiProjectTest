@@ -38,7 +38,8 @@ header {
 
 
 .banner .container .sologan {
-  width: 80%;
+  width: 100%;
+  max-width: 293px;
   max-height: 17rem;
   margin: 0 64px;
   padding: 0 12px;
@@ -113,7 +114,8 @@ header {
 
 
 .news-box {
-  width: 375px;
+  width: 100%;
+  /* width: 375px; */
   height: 745px;
   padding: 64px 12px;
   background-color: #ffffff;
@@ -132,7 +134,6 @@ header {
   font-weight: 900;
   line-height: 29px;
   letter-spacing: 0.08em;
-  text-align: left;
 }
 
 .E-font {
@@ -151,7 +152,6 @@ header {
   font-weight: 500;
   line-height: 30px;
   letter-spacing: 0.03em;
-  text-align: left;
   color: #363636;
 }
 
@@ -164,6 +164,37 @@ header {
   color: #198783;
 }
 
+.treatment-box .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.treatment-box .review-card {
+  width: 100%;
+  max-width: 351px;
+  height: 242px;
+  margin-bottom: 24px;
+}
+
+.treatment-name {
+  color: #363636;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 1.6px;
+  margin-top: 20px;
+  margin-bottom: 12px;
+}
+
+.treatment-box .review-card .btn {
+  color: #666666;
+  background: #f0f0f0;
+  width: 108px;
+  height: 36px;
+  padding: 6px 20px;
+  border-radius: 25px;
+}
 
 
 @media (min-width:451px) {
@@ -174,16 +205,15 @@ header {
 
   .banner .container .sologan {
     width: 63%;
-    max-width: 293px;
     margin: 0 12px;
   }
 
-  .news-box {
+  /* .news-box {
     width: 100%;
-  }
+  } */
 }
 
-@media (min-width:779px) {
+@media (min-width:768px) {
   .banner {
     height: calc(800px * 0.75);
   }
@@ -228,15 +258,80 @@ header {
     height: calc(61px * 0.75);
     bottom: calc(-.2rem * 0.75);
   }
+
+  .title-font {
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 38px;
+    letter-spacing: 0.08em;
+    text-align: left;
+  }
+
+  .E-font {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0.08em;
+    text-align: left;
+  }
+
+  .E-font::after {
+    content: "";
+    width: 100px;
+    display: inline-block;
+    margin: 4px;
+    border: 1.5px solid #198783;
+  }
+
+  .news-items .content {
+    max-width: 100%;
+    width: calc(856px * .75);
+  }
+
+  .time-font {
+    width: 30%;
+  }
+
+  .treatment-box .content {
+    max-width: calc(1296px * .75);
+  }
+
+  .treatment-box .content {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .treatment-title {
+    font-size: 28px;
+    margin-top: 40px;
+    margin-bottom: 24px;
+  }
+
+  .treatment-box .review-card {
+    /* max-width: 293px; */
+    max-width: 48%;
+    height: calc(396px * .75);
+  }
 }
 
-@media (min-width: 1080px) {
+@media (min-width: 1075px) {
   .banner .container .sologan {
     max-width: calc(648px * 0.75);
   }
 
   .sologan-content {
     width: calc(520px * 0.75);
+  }
+
+  /* .treatment-box .content {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  } */
+
+  .treatment-box .review-card {
+    max-width: 31%;
   }
 }
 
@@ -292,5 +387,18 @@ header {
     bottom: -.2rem;
     font-size: 24px;
     line-height: 29px;
+  }
+
+  .news-items .content {
+    max-width: 856px;
+  }
+
+  .treatment-box .content {
+    max-width: 1296px;
+  }
+
+  .treatment-box .review-card {
+    max-width: 412px;
+    height: 396px;
   }
 }
