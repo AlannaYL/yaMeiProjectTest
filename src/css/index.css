@@ -164,6 +164,7 @@ header {
   color: #198783;
 }
 
+/* 
 .treatment-box .content {
   display: flex;
   flex-direction: column;
@@ -195,7 +196,7 @@ header {
   padding: 6px 20px;
   border-radius: 25px;
 }
-
+ */
 
 @media (min-width:451px) {
 
@@ -292,27 +293,27 @@ header {
     width: 30%;
   }
 
-  .treatment-box .content {
+  /* .treatment-box .content {
     max-width: calc(1296px * .75);
-  }
+  } */
 
-  .treatment-box .content {
+  /* .treatment-box .content {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-  }
+  } */
 
-  .treatment-title {
+  /* .treatment-title {
     font-size: 28px;
     margin-top: 40px;
     margin-bottom: 24px;
-  }
+  } */
 
-  .treatment-box .review-card {
-    /* max-width: 293px; */
+  /* .treatment-box .review-card {
+    max-width: 293px;
     max-width: 48%;
     height: calc(396px * .75);
-  }
+  } */
 }
 
 @media (min-width: 1075px) {
@@ -329,10 +330,10 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
   } */
-
+  /* 
   .treatment-box .review-card {
     max-width: 31%;
-  }
+  } */
 }
 
 @media (min-width: 1900px) {
@@ -393,6 +394,7 @@ header {
     max-width: 856px;
   }
 
+  /* 
   .treatment-box .content {
     max-width: 1296px;
   }
@@ -400,5 +402,5 @@ header {
   .treatment-box .review-card {
     max-width: 412px;
     height: 396px;
-  }
+  } */
 }
